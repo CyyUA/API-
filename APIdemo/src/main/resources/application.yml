@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: user-api
+  datasource:
+      url: jdbc:mysql://127.0.0.1:3306/imooc-security?serverTimezone=UTC&useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: Ycy13579
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    show-sql: true
+server:
+  port: 8080
+  ssl:
+    key-store: classpath:jojo.key
+    key-store-password: Ycy13579
+    key-password: Ycy13579
+
+
